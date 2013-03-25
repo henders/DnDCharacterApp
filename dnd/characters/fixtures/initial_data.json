@@ -1,0 +1,517 @@
+[
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "permission", 
+    "name": "permission", 
+    "app_label": "auth"
+  }, 
+  "pk": 1
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "group", 
+    "name": "group", 
+    "app_label": "auth"
+  }, 
+  "pk": 2
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "user", 
+    "name": "user", 
+    "app_label": "auth"
+  }, 
+  "pk": 3
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "contenttype", 
+    "name": "content type", 
+    "app_label": "contenttypes"
+  }, 
+  "pk": 4
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "session", 
+    "name": "session", 
+    "app_label": "sessions"
+  }, 
+  "pk": 5
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "site", 
+    "name": "site", 
+    "app_label": "sites"
+  }, 
+  "pk": 6
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "logentry", 
+    "name": "log entry", 
+    "app_label": "admin"
+  }, 
+  "pk": 7
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "attributes", 
+    "name": "attributes", 
+    "app_label": "characters"
+  }, 
+  "pk": 8
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "power", 
+    "name": "power", 
+    "app_label": "characters"
+  }, 
+  "pk": 9
+},
+{
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "character", 
+    "name": "character", 
+    "app_label": "characters"
+  }, 
+  "pk": 10
+},
+{
+  "model": "sessions.session", 
+  "fields": {
+    "session_data": "ODg3YWQyZWIwZTNhOWRlOWI0YTMwY2M1MzMwMzg3OGJmMThjN2M0NDqAA31xAChYDQAAAF9hdXRoX3VzZXJfaWRxAUsBWBIAAABfYXV0aF91c2VyX2JhY2tlbmRxAlgpAAAAZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmRxA3Uu", 
+    "expire_date": "2013-04-08T04:13:18.268Z"
+  }, 
+  "pk": "dueet168h4v7aji7cgsbnyp5wms5w65v"
+},
+{
+  "model": "sites.site", 
+  "fields": {
+    "name": "example.com", 
+    "domain": "example.com"
+  }, 
+  "pk": 1
+},
+{
+  "model": "characters.attributes", 
+  "fields": {
+    "charisma": 12, 
+    "dexterity": 12, 
+    "intelligence": 12, 
+    "strength": 12, 
+    "constitution": 12, 
+    "wisdom": 12
+  }, 
+  "pk": 1
+},
+{
+  "model": "characters.power", 
+  "fields": {
+    "spell_range": 0, 
+    "duration_segments": 0, 
+    "special": "n/a", 
+    "potency": 9, 
+    "stamina": 1, 
+    "target": "Ally", 
+    "recovery_time": 2, 
+    "name": "Cure Wounds", 
+    "cast_time": 1, 
+    "resolve": 0, 
+    "components": "V", 
+    "effect": "Heals stuff"
+  }, 
+  "pk": 1
+},
+{
+  "model": "characters.power", 
+  "fields": {
+    "spell_range": 50, 
+    "duration_segments": 0, 
+    "special": "n/a", 
+    "potency": 1, 
+    "stamina": 0, 
+    "target": "Mob", 
+    "recovery_time": 4, 
+    "name": "Smite", 
+    "cast_time": 4, 
+    "resolve": 2, 
+    "components": "V", 
+    "effect": "Damages stuff"
+  }, 
+  "pk": 2
+},
+{
+  "model": "characters.character", 
+  "fields": {
+    "sex": "M", 
+    "age": 35, 
+    "level": 8, 
+    "xp": 8500, 
+    "height": 67, 
+    "powers": [
+      1, 
+      2
+    ], 
+    "attributes": 1, 
+    "race": "Human", 
+    "name": "Armvar", 
+    "char_class": "Cleric", 
+    "weight": 160, 
+    "size": "M"
+  }, 
+  "pk": 1
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 1, 
+    "name": "Can add permission", 
+    "codename": "add_permission"
+  }, 
+  "pk": 1
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 1, 
+    "name": "Can change permission", 
+    "codename": "change_permission"
+  }, 
+  "pk": 2
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 1, 
+    "name": "Can delete permission", 
+    "codename": "delete_permission"
+  }, 
+  "pk": 3
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 2, 
+    "name": "Can add group", 
+    "codename": "add_group"
+  }, 
+  "pk": 4
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 2, 
+    "name": "Can change group", 
+    "codename": "change_group"
+  }, 
+  "pk": 5
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 2, 
+    "name": "Can delete group", 
+    "codename": "delete_group"
+  }, 
+  "pk": 6
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 3, 
+    "name": "Can add user", 
+    "codename": "add_user"
+  }, 
+  "pk": 7
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 3, 
+    "name": "Can change user", 
+    "codename": "change_user"
+  }, 
+  "pk": 8
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 3, 
+    "name": "Can delete user", 
+    "codename": "delete_user"
+  }, 
+  "pk": 9
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 4, 
+    "name": "Can add content type", 
+    "codename": "add_contenttype"
+  }, 
+  "pk": 10
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 4, 
+    "name": "Can change content type", 
+    "codename": "change_contenttype"
+  }, 
+  "pk": 11
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 4, 
+    "name": "Can delete content type", 
+    "codename": "delete_contenttype"
+  }, 
+  "pk": 12
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 5, 
+    "name": "Can add session", 
+    "codename": "add_session"
+  }, 
+  "pk": 13
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 5, 
+    "name": "Can change session", 
+    "codename": "change_session"
+  }, 
+  "pk": 14
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 5, 
+    "name": "Can delete session", 
+    "codename": "delete_session"
+  }, 
+  "pk": 15
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 6, 
+    "name": "Can add site", 
+    "codename": "add_site"
+  }, 
+  "pk": 16
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 6, 
+    "name": "Can change site", 
+    "codename": "change_site"
+  }, 
+  "pk": 17
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 6, 
+    "name": "Can delete site", 
+    "codename": "delete_site"
+  }, 
+  "pk": 18
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 7, 
+    "name": "Can add log entry", 
+    "codename": "add_logentry"
+  }, 
+  "pk": 19
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 7, 
+    "name": "Can change log entry", 
+    "codename": "change_logentry"
+  }, 
+  "pk": 20
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 7, 
+    "name": "Can delete log entry", 
+    "codename": "delete_logentry"
+  }, 
+  "pk": 21
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 8, 
+    "name": "Can add attributes", 
+    "codename": "add_attributes"
+  }, 
+  "pk": 22
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 8, 
+    "name": "Can change attributes", 
+    "codename": "change_attributes"
+  }, 
+  "pk": 23
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 8, 
+    "name": "Can delete attributes", 
+    "codename": "delete_attributes"
+  }, 
+  "pk": 24
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 9, 
+    "name": "Can add power", 
+    "codename": "add_power"
+  }, 
+  "pk": 25
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 9, 
+    "name": "Can change power", 
+    "codename": "change_power"
+  }, 
+  "pk": 26
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 9, 
+    "name": "Can delete power", 
+    "codename": "delete_power"
+  }, 
+  "pk": 27
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 10, 
+    "name": "Can add character", 
+    "codename": "add_character"
+  }, 
+  "pk": 28
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 10, 
+    "name": "Can change character", 
+    "codename": "change_character"
+  }, 
+  "pk": 29
+},
+{
+  "model": "auth.permission", 
+  "fields": {
+    "content_type": 10, 
+    "name": "Can delete character", 
+    "codename": "delete_character"
+  }, 
+  "pk": 30
+},
+{
+  "model": "auth.user", 
+  "fields": {
+    "is_active": true, 
+    "is_staff": true, 
+    "last_login": "2013-03-25T04:13:18.266Z", 
+    "email": "ads@asd.com", 
+    "user_permissions": [], 
+    "groups": [], 
+    "password": "pbkdf2_sha256$10000$3aWpd8blvgTk$w8MtOSY02ywbRAr0E9Zy7vAzi6uxhJzYhlbR5ncIFag=", 
+    "is_superuser": true, 
+    "username": "henders", 
+    "date_joined": "2013-03-24T22:34:38.322Z", 
+    "last_name": "", 
+    "first_name": ""
+  }, 
+  "pk": 1
+},
+{
+  "model": "admin.logentry", 
+  "fields": {
+    "content_type": 9, 
+    "change_message": "", 
+    "object_repr": "Power object", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "user": 1, 
+    "action_time": "2013-03-25T04:13:55.599Z"
+  }, 
+  "pk": 1
+},
+{
+  "model": "admin.logentry", 
+  "fields": {
+    "content_type": 9, 
+    "change_message": "", 
+    "object_repr": "Power object", 
+    "object_id": "2", 
+    "action_flag": 1, 
+    "user": 1, 
+    "action_time": "2013-03-25T04:14:46.786Z"
+  }, 
+  "pk": 2
+},
+{
+  "model": "admin.logentry", 
+  "fields": {
+    "content_type": 8, 
+    "change_message": "", 
+    "object_repr": "Attributes object", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "user": 1, 
+    "action_time": "2013-03-25T04:15:05.377Z"
+  }, 
+  "pk": 3
+},
+{
+  "model": "admin.logentry", 
+  "fields": {
+    "content_type": 10, 
+    "change_message": "", 
+    "object_repr": "Character object", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "user": 1, 
+    "action_time": "2013-03-25T04:16:01.928Z"
+  }, 
+  "pk": 4
+}
+]
